@@ -15,7 +15,7 @@ div#mainContainer{
 }
 
 div#mainWrapper{
-    height: 95vh;
+    height: 700px;
     margin: auto;
     background-color: white;
     position: absolute;
@@ -30,11 +30,14 @@ div.contactsWrapper{
 
 div.messagesWrapper{
     height: 100%;
-    background-color: crimson;
 }
 
 .contactsWrapper header{
     font-size: .8rem;
+}
+
+.contactsWrapper main{
+    height: 100%;
 }
 
 div.contNavbar{
