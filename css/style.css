@@ -112,7 +112,7 @@ div.contactsListBox ul{
 
 ul.contactsList li{
     height: 65px;
-    border-bottom: grey solid 1px;
+    border-bottom: #B1B1B1 solid 1px;
     transition: .05s linear;
 }
 
