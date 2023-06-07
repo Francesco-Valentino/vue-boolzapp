@@ -32,6 +32,10 @@ div.messagesWrapper{
     height: 100%;
 }
 
+header{
+    background-color: #EAEAEA;
+}
+
 .contactsWrapper header{
     font-size: .8rem;
 }
@@ -94,6 +98,7 @@ div.contactsSearch input{
     width: 95%;
     height: 1.8rem;
     font-size: .9rem;
+    border: #B1B1B1 1px solid;
 }
 
 div.contactsSearch i{
@@ -118,6 +123,15 @@ ul.contactsList li{
     height: 65px;
     border-bottom: #B1B1B1 solid 1px;
     transition: .05s linear;
+    position: relative;
+}
+
+li span.contactHour{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: grey;
+    font-size: .6rem;
 }
 
 ul.contactsList li:hover{
@@ -135,12 +149,45 @@ div.contactText p{
     font-size: .9rem;
 }
 
-div.contactText span{
+div.contactText span,
+span.contactAccess{
     font-size: .7rem;
     color: grey;
 }
 
+div.messagesWrapper main{
+    height: calc(100% - 120px);
+    overflow-y: scroll;
+    background-image: url(../img/mine.jpg);
+}
 
+div.messagesWrapper footer{
+    height: 60px;
+    background-color: #EAEAEA;
+}
+
+div.footerWrapper{
+    width: 100%;
+}
+
+div.footerWrapper i{
+    font-size: 1.25rem;
+    color: #B1B1B1;
+}
+
+div.footerWrapper input{
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    height: 1.8rem;
+}
+
+div.chatWrapper{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: crimson;
+}
 
 
 
