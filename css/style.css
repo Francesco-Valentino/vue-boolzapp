@@ -103,9 +103,44 @@ div.contactsSearch i{
     color: grey;
 }
 
-div.contactsList ul{
-    list-style-type: none;
+div.contactListBox{
+    overflow-y: scroll;
 }
+
+div.contactsListBox ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.contactsList li{
+    height: 65px;
+    border-bottom: grey solid 1px;
+    background-color: tomato;
+    transition: .05s linear;
+}
+
+ul.contactsList li:hover{
+    background-color: #E9EBEB;
+}
+
+ul.contactsList img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+div.contactText p{
+    font-size: .9rem;
+}
+
+div.contactText span{
+    font-size: .7rem;
+    color: grey;
+}
+
+
 
 
 
