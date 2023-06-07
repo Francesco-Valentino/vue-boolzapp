@@ -100,8 +100,9 @@ div.contactsSearch i{
     color: grey;
 }
 
-div.contactListBox{
+div.contactsListBox{
     overflow-y: scroll;
+    height: 100%;
 }
 
 div.contactsListBox ul{
