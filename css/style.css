@@ -35,6 +35,10 @@ div.messagesWrapper{
     background-color: crimson;
 }
 
+.contactsWrapper header{
+    font-size: .8rem;
+}
+
 div.contNavbar{
     height: 60px;
     /* background-color: blueviolet; */
@@ -47,7 +51,6 @@ div.contMyProfile img{
     object-fit: cover;
 }
 div.contMyProfile p{
-    font-size: .8rem;
     font-weight: 500;
 }
 
@@ -66,5 +69,18 @@ div.activateNotifBox{
     height: 45px;
     border-radius: 50%;
     background-color: white;
+}
+
+div.activateNotifBox i{
+    font-size: 1.3rem;
+    color: #8EDAFC;
+}
+
+div.activateNotifText{
+    line-height: 1.1rem;
+}
+
+.activateNotifText a:link{
+    color: grey;
 }
 
