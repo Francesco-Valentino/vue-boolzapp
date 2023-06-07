@@ -184,9 +184,31 @@ div.footerWrapper input{
 
 div.chatWrapper{
     width: 80%;
-    margin: 0 auto;
-    height: 100%;
-    background-color: crimson;
+    margin: 2.5rem auto 0;
+}
+
+div.chatMessage{
+    width: 100%;
+    font-size: .8rem;
+    margin-bottom: .3rem;
+}
+
+.singleMessage{
+    width: 45%;
+    border-radius: 10px;
+    padding: .1rem .8rem;
+}
+
+.singleMessage p{
+    padding-top: .5rem;
+}
+
+.messageSent{
+background-color: #D5F9BA;
+}
+
+.messageReceived{
+background-color: white;
 }
 
 
