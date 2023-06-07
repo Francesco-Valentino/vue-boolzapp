@@ -16,7 +16,7 @@ div#mainContainer{
 }
 
 div#mainWrapper{
-    height: 90vh;
+    height: 95vh;
     margin: auto;
     background-color: aqua;
     position: absolute;
@@ -37,12 +37,12 @@ div.messagesWrapper{
 
 div.contNavbar{
     height: 60px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 div.contMyProfile img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -54,5 +54,17 @@ div.contMyProfile p{
 .contNavIcons i{
     margin-right: 1rem;
     color: #B1B1B1;
+}
+
+div.contNotif{
+    height: 65px;
+    background-color: #8EDAFC;
+}
+
+div.activateNotifBox{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
 }
 
