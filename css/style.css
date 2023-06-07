@@ -84,3 +84,29 @@ div.activateNotifText{
     color: grey;
 }
 
+div.contactsSearch{
+    height: 40px;
+    position: relative;
+}
+
+div.contactsSearch input{
+    text-align: center;
+    width: 95%;
+    height: 1.8rem;
+    font-size: .9rem;
+}
+
+div.contactsSearch i{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    color: grey;
+}
+
+div.contactsList ul{
+    list-style-type: none;
+}
+
+
+
+
