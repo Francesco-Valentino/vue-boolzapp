@@ -37,7 +37,7 @@ div.messagesWrapper{
 }
 
 .contactsWrapper main{
-    height: 100%;
+    height: calc(100% - 125px);
 }
 
 div.contNavbar{
