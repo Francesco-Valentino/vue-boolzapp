@@ -8,8 +8,8 @@ div#mainContainer{
   background: linear-gradient(
     to top,
     #D9DBD2 0%,
-    #D9DBD2 80%,
-    #009688 80%,
+    #D9DBD2 85%,
+    #009688 85%,
     #009688 100%
   );
   position: relative;
@@ -18,7 +18,7 @@ div#mainContainer{
 div#mainWrapper{
     height: 95vh;
     margin: auto;
-    background-color: aqua;
+    background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,7 +26,6 @@ div#mainWrapper{
 }
 
 div.contactsWrapper{
-    background-color: chartreuse;
     height: 100%;
 }
 
@@ -41,7 +40,6 @@ div.messagesWrapper{
 
 div.contNavbar{
     height: 60px;
-    /* background-color: blueviolet; */
 }
 
 div.contMyProfile img{
@@ -116,7 +114,6 @@ div.contactsListBox ul{
 ul.contactsList li{
     height: 65px;
     border-bottom: grey solid 1px;
-    background-color: tomato;
     transition: .05s linear;
 }
 
