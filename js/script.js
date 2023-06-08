@@ -183,7 +183,13 @@ createApp({
             if(this.messageInput !== ""){
                 this.contacts[this.activeContact].messages.push({"date": '10/01/2020 15:50:00', "message": this.messageInput, "status": 'sent'});
                 this.messageInput = "";
+
+                setTimeout(this.autoAnswer, 1000);
             }
+        },
+
+        autoAnswer(){
+            this.contacts[this.activeContact].messages.push({"date": '10/01/2020 15:50:00', "message": "Ok!", "status": 'received'});
         }
     }
 }).mount("#app");
