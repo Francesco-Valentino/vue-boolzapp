@@ -168,6 +168,8 @@ createApp({
             ],
 
             activeContact: 0,
+
+            messageInput: "",
             
         }
     },
@@ -175,6 +177,13 @@ createApp({
     methods: {
         switchActiveContact(newContact){
             this.activeContact = newContact;
+        },
+
+        sendMessage(){
+            if(this.messageInput !== ""){
+                this.contacts[this.activeContact].messages.push({"date": '10/01/2020 15:50:00', "message": this.messageInput, "status": 'sent'});
+                this.messageInput = "";
+            }
         }
     }
 }).mount("#app");

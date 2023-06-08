@@ -155,7 +155,7 @@
                             <div class="footerWrapper d-flex justify-content-between align-items-center">
                                 <i class="fa-regular fa-face-smile ms-4"></i>
 
-                                <input type="text" placeholder="Scrivi un messaggio">
+                                <input type="text" placeholder="Scrivi un messaggio" v-model="messageInput" @keyup.enter="sendMessage()">
 
                                 <i class="fa-solid fa-microphone me-4"></i>
                             </div>
