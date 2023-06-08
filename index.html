@@ -67,7 +67,7 @@
                             <div class="contactsListBox">
                                 <ul class="contactsList">
                                     <li v-for="(contact, index) in contacts" class="d-flex justify-content-start align-items-center">
-                                        <img class="ms-3" :src="contact.avatar" alt="Immagine profilo di Michele">
+                                        <img class="ms-3" :src="contact.avatar" alt="Immagine profilo">
 
                                         <div class="contactText ms-2 mt-1">
                                             <p>
@@ -123,9 +123,13 @@
 
                             
                             <div class="chatWrapper d-flex flex-column">
-                                <div v-for="(message, index) in contacts[activeContact].message">
+                                <div v-for="(message, index) in contacts[activeContact].messages">
                                     <div class="chatMessage d-flex" :class="message.status === 'sent' ? 'justify-content-end' : 'justify-content-start'">
-
+                                        <div class="singleMessage" :class="message.status === 'sent' ? 'messageSent' : 'messageReceived'">
+                                            <p>
+                                                {{ message.message }}
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
 

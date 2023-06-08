@@ -167,7 +167,7 @@ createApp({
                 }
             ],
 
-            activeContact: 0
+            activeContact: 2
             
         }
     },
