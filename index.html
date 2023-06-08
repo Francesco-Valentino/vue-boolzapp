@@ -124,7 +124,9 @@
                             
                             <div class="chatWrapper d-flex flex-column">
                                 <div v-for="(message, index) in contacts[activeContact].message">
+                                    <div class="chatMessage d-flex" :class="message.status === 'sent' ? 'justify-content-end' : 'justify-content-start'">
 
+                                    </div>
                                 </div>
 
                                 <!-- <div class="chatMessage d-flex justify-content-end">
