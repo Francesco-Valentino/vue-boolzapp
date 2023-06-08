@@ -123,14 +123,8 @@
 
                             
                             <div class="chatWrapper d-flex flex-column">
-                                <div v-for="(message, index) in contacts[activeContact].messages">
-                                    <div class="chatMessage d-flex" :class="contacts(contact).messages(message).status === 'sent' ? 'justify-content-end' : 'justify-content-start'">
-                                        <div class="singleMessage messageSent">
-                                            <p>
-                                                {{ contacts[activeContact].messages.message }}
-                                            </p>
-                                        </div>
-                                    </div>
+                                <div v-for="(message, index) in contacts[activeContact].message">
+
                                 </div>
 
                                 <!-- <div class="chatMessage d-flex justify-content-end">
