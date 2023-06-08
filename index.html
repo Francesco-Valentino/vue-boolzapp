@@ -66,7 +66,7 @@
 
                             <div class="contactsListBox">
                                 <ul class="contactsList">
-                                    <li v-for="(contact, index) in contacts" class="d-flex justify-content-start align-items-center">
+                                    <li v-for="(contact, index) in contacts" class="d-flex justify-content-start align-items-center" @click="switchActiveContact(index)">
                                         <img class="ms-3" :src="contact.avatar" alt="Immagine profilo">
 
                                         <div class="contactText ms-2 mt-1">
@@ -95,10 +95,10 @@
                         <header>
                             <div class="contNavbar d-flex justify-content-between">
                                 <div class="contMyProfile d-flex align-items-center">
-                                    <img class="ms-2" src="img/avatar_1.jpg" alt="Immagine profilo interlocutore">
+                                    <img class="ms-2" :src="contacts[activeContact].avatar" alt="Immagine profilo interlocutore">
     
                                     <p class="pt-3 ps-2">
-                                        Michele
+                                        {{contacts[activeContact].name}}
     
                                         <br>
     

@@ -167,12 +167,14 @@ createApp({
                 }
             ],
 
-            activeContact: 2
+            activeContact: 0,
             
         }
     },
 
     methods: {
-
+        switchActiveContact(newContact){
+            this.activeContact = newContact;
+        }
     }
 }).mount("#app");
