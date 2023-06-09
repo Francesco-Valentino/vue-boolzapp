@@ -203,8 +203,17 @@ div.chatMessage{
     padding: .1rem .8rem;
 }
 
-.singleMessage p{
+.singleMessage p.messageContent{
     padding-top: .5rem;
+    line-height: 1.1rem;
+    margin: 0;
+}
+
+.singleMessage p.messageTime{
+    color: grey;
+    font-size: .5rem;
+    text-align: right;
+    margin: 0;
 }
 
 .messageSent{

@@ -126,8 +126,12 @@
                                 <div v-for="(message, index) in contacts[activeContact].messages">
                                     <div class="chatMessage d-flex" :class="message.status === 'sent' ? 'justify-content-end' : 'justify-content-start'">
                                         <div class="singleMessage" :class="message.status === 'sent' ? 'messageSent' : 'messageReceived'">
-                                            <p>
+                                            <p class="messageContent">
                                                 {{ message.message }}
+                                            </p>
+
+                                            <p class="messageTime">
+                                                {{ message.date }}
                                             </p>
                                         </div>
                                     </div>
