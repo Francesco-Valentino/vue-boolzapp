@@ -170,6 +170,8 @@ createApp({
             activeContact: 0,
 
             messageInput: "",
+
+            contactInputValue: "",
             
         }
     },
@@ -190,6 +192,14 @@ createApp({
 
         autoAnswer(){
             this.contacts[this.activeContact].messages.push({"date": '10/01/2020 15:50:00', "message": "Ok!", "status": 'received'});
+        },
+
+        checkVisibility(userinput){
+            contacts.forEach(element => {
+                if(!element.name.includes(contactInputValue)){
+                    element.visible = false;
+                }
+            });
         }
     }
 }).mount("#app");
