@@ -126,6 +126,10 @@ ul.contactsList li{
     position: relative;
 }
 
+.contactNotVisible{
+    display: none;
+}
+
 li span.contactHour{
     position: absolute;
     top: 5px;
