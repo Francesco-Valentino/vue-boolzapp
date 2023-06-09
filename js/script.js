@@ -195,8 +195,12 @@ createApp({
         },
 
         checkVisibility(userinput){
+
+
             this.contacts.forEach(element => {
-                if(!element.name.includes(this.contactInputValue)){
+                element.visible = true;
+
+                if(!element.name.toLowerCase().includes(this.contactInputValue.toLowerCase())){
                     element.visible = false;
                 }
             });

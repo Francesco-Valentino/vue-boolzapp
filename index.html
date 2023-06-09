@@ -66,7 +66,7 @@
 
                             <div class="contactsListBox">
                                 <ul class="contactsList">
-                                    <li v-for="(contact, index) in contacts" class="d-flex justify-content-start align-items-center" :class="contact.visible === true ? '' : 'contactNotVisible' " @click="switchActiveContact(index)">
+                                    <li v-for="(contact, index) in contacts" class="justify-content-start align-items-center" :class="contact.visible === true ? 'd-flex' : 'contactNotVisible' " @click="switchActiveContact(index)">
                                         <img class="ms-3" :src="contact.avatar" alt="Immagine profilo">
 
                                         <div class="contactText ms-2 mt-1">
