@@ -126,7 +126,7 @@ ul.contactsList li{
     position: relative;
 }
 
-.contactNotVisible{
+ul.contactsList li.contactNotVisible{
     display: none;
 }
 
